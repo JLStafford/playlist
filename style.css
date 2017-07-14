@@ -4,7 +4,7 @@
 }
 
 html, body {
-  background-color: #EEEEEE;
+  background-color: #FFFFFF;
 	width: 100%;
 	height: 100%;
 }
@@ -79,11 +79,12 @@ header {
   height: 30vh;
   margin: 25px;
   width: 90%;
-  align-items: center;
   border: 4px solid black;
   background-color: #EEEEEE;
   justify-content: flex-start;
   align-self: center;
+  flex-direction: column;
+  padding: 15px;
 }
 
 
@@ -99,6 +100,24 @@ button {
   font-size: 20px;
   color: #EEEEEE;
   background-color: #343428;
+}
+
+a {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 15px;
+  }
+
+li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .image {
@@ -123,7 +142,7 @@ button {
 	margin: 10px 0;
 }
 
-.action {
+.action-playlists {
   display: flex;
   margin: 0 61px;
 }
@@ -137,6 +156,11 @@ img {
   height: inherit;
   /*opacity: 1;*/
   z-index: 2;
+}
+
+img.item {
+  width: 100px;
+  height: 100px;
 }
 
 footer {
