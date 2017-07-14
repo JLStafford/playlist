@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background-color: #EEEEEE;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+  background-color: #9A9B8D;
+  height: 45px;
+  border-bottom: 2px solid black;
+}
+
+.playlist-header {
+  background-color: #9A9B8D;
+  height: 105px;
+}
+
+.playlist-header-text {
+  color: #EEEEEE;
+  padding-left: 35px;
+  padding-top: 60px;
+  font-size: 30px
+}
+
+#container {
+	display: flex;
+}
+
+.playlist-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-column, .right-column {
+	height: calc(100vh - 45px);
+	width: 50%;
+}
+
+.left-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.playlist-page {
+  height: calc(100vh - 45px);
+}
+
+.scroll {
+  background-color: #FFFFFF;
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll nav {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.item {
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: center;
+	align-items: center;
+  margin: 5px 10px;
+}
+
+.selected {
+  display: flex;
+  height: 30vh;
+  margin: 25px;
+  width: 90%;
+  align-items: center;
+  border: 4px solid black;
+  background-color: #EEEEEE;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+
+h1 {
+  color: #6E5073;
+  font-size: 45px;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  padding: 6px 28px;
+  font-size: 20px;
+  color: #EEEEEE;
+  background-color: #343428;
+}
+
+.image {
+  height: inherit;
+  width: 50vw;
+  position: absolute;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+.right-column {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 250px;
+	height: 250px;
+	margin: 10px 0;
+}
+
+.action {
+  display: flex;
+  margin: 0 61px;
+}
+
+.submit {
+  margin-left: 10px;
+}
+
+img {
+  width: inherit;
+  height: inherit;
+  /*opacity: 1;*/
+  z-index: 2;
+}
+
+footer {
+  background-color: #67675B;
+  color: 	#EEEEEE;
+	height: 45px;
+	display: flex;
+	align-items: center;
+}
+
+footer p {
+	margin: 0;
+	padding: 0 50px;
+  font-size: 20px;
+	box-sizing: border-box;
+}
